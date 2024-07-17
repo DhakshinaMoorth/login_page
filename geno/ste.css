@@ -1,0 +1,266 @@
+ body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} 
+
+header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 124px; 
+    height: 62px;
+   
+}
+
+main {
+    
+    width: 100%;
+    padding-top: 100px; 
+}
+
+.promo {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin: 100px;
+}
+
+.promo-image {
+    flex: 1;
+    max-width: 100%;
+    padding:50px
+}
+
+.promo-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.promo-text {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 40px;
+}
+
+.promo-text h1, .promo-text h2 {
+    margin: 0;
+    
+}
+
+.promo-text .highlight {
+    color: #6c63ff; 
+}
+
+.promo-text .btn {
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.social-bar {
+    position: fixed;
+    top: 40%;
+    left: 1%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    color: white;
+}
+
+.social-icon:hover .fa-facebook-f {
+    background-color: #3b5998;
+}
+
+.social-icon:hover .fa-twitter {
+    background-color: #1da1f2;
+}
+
+.social-icon:hover .fa-instagram {
+    background-color: #e4405f;
+}
+
+.social-icon:hover .fa-youtube {
+    background-color: #ff0000;
+}
+
+.search-box {
+    position: relative;
+    width: 150px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    margin-right: 50px;
+}
+
+.search-box .form-control {
+    border: none;
+    padding: 10px 20px 10px 40px;
+    border-radius: 55px;
+    box-shadow: none;
+}
+
+.search-box .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+.container {
+    background-color: white;
+    padding: 0px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.product {
+    padding: 10px;
+    margin-bottom: 30px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.product img {
+    max-width: 40%;
+    max-height: 40%;
+    border-radius: 20px;
+
+}
+.product h5{
+    font-size: 12px;
+}
+ 
+.add-to-cart {
+    margin-top: 10px;
+    background-image: linear-gradient(to right, rgb(114, 59, 224) , rgb(116, 18, 75));
+    color:#fff;
+    color: rgb(237, 233, 233);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ;
+}
+.add-to-cart:hover {
+    background-color: linear-gradient(to left, rgb(116,18,75) , rgb(114,59,224));
+}
+
+.subscribe-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+.subscribe-section h2 {
+    margin-bottom: 20px;
+}
+.subscribe-form {
+    display: flex;
+    align-items: center;
+}
+.subscribe-form input[type="email"] {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-left: 20px;
+    border: 1px solid #ccc;
+    height: 50px;
+    width: 300px;
+}
+.subscribe-form button {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 30px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: #000;
+    transition: 0.3s, color 0.3s;
+    color: #fff;
+    height: 50px;
+    width: 100px;
+} 
+.subscribe-form:hover button{
+    background-color: #3b5998;
+}
+/* ................... */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 0%;
+}
+
+.footer {
+   
+    background-color: #000;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position:relative;
+    top:100px;
+
+     
+}
+.footer h3{
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .social-images:hover {
+    padding: 10px;
+    margin-top: 10px;
+    margin: 0 10px;
+    color: #ff0000;
+}
+.footer .contact-info,
+.footer .about-info {
+    margin-top: 10px;
+    color: #fff;  
+}
+
+.footer .about-info{
+    font-size: 17px;
+}
+.footer .contact-info p .highlight,
+.footer .about-info p {
+    margin: 0;
+    color:#ff0000;
+}
+
+.footer .contact-info p ,
+.footer .about-info p .highlights{
+    margin: 0;
+    color:#000;
+    color: #fff;
+}
